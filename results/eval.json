@@ -1,0 +1,20 @@
+{
+  "embeddings": {
+    "engine": "embeddings",
+    "version": "1",
+    "n": 1918,
+    "accuracy": 0.7523,
+    "macro_f1": 0.7103,
+    "share_confident_0_8": 0.3519,
+    "accuracy_when_confident": 0.957
+  },
+  "tfidf": {
+    "engine": "tfidf",
+    "version": "1",
+    "n": 1918,
+    "accuracy": 0.7763,
+    "macro_f1": 0.7227,
+    "share_confident_0_8": 0.3415,
+    "accuracy_when_confident": 0.9588
+  }
+}
