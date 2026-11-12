@@ -38,7 +38,10 @@ jobs:
       - run: complaints build
       - run: complaints enrich --engine tfidf
       - name: Second run must hit the cache only
-        run: complaints enrich --engine tfidf | tee second.json && grep -q '"new": 0' second.json
+        shell: bash
+        run: |
+          complaints enrich --engine tfidf | tee second.json
+          grep -q '"new": 0' second.json
       - run: complaints gold --engine tfidf
       - name: Summary
         run: |
